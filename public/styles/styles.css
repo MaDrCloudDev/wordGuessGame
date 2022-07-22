@@ -42,9 +42,9 @@
 }
 
  .button {
-     background: #7044a0;
+     background: #6a6c6e;
      border: none;
-     border-bottom: 2px solid #603a88;
+     border-bottom: 2px solid black;
      cursor: pointer;
      color: white;
      font-size: 1.4rem;
@@ -54,5 +54,6 @@
 }
 
  .button:hover {
-     background: #5F3A87;
+     background: #fff000;
+     color: black;
 }
