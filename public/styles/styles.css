@@ -9,8 +9,8 @@
 }
 
  body {
-     background: #2B292E;
-     color: #fafafa;
+     background: black;
+     color: #338eef;
      font-family: Helvetica, Arial, sans-serif;
      font-size: 1.6rem;
      display: flex;
@@ -42,11 +42,11 @@
 }
 
  .button {
-     background: #6a6c6e;
+     background: #fff000;
      border: none;
-     border-bottom: 2px solid black;
+     border-bottom: 2px solid #6a6c6e;;
      cursor: pointer;
-     color: white;
+     color: black;
      font-size: 1.4rem;
      font-weight: 300;
      padding: .8rem;
@@ -54,6 +54,6 @@
 }
 
  .button:hover {
-     background: #fff000;
-     color: black;
+     background: #6a6c6e;
+     color: white;
 }
