@@ -1,2 +1,2 @@
-# [my-word-guess-game](https://madrwordguessgame.netlify.app)
-My Word Guess Game
+# [my-word-guess-game](https://madrwordguessgame.netlify.app) (desktop only)
+My word guess game
