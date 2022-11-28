@@ -1,2 +1,2 @@
 # [my-word-guess-game](https://madrwordguessgame.netlify.app) (desktop only)
-My word guess game
+My Hangman-style word guess game I built using HTML, CSS, JavaScript, Babel, and Webpack
