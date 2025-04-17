@@ -59,7 +59,7 @@ class Hangman {
 
 // src/requests.ts
 var getPuzzle = async () => {
-  const response = await fetch("https://cloudflare-wgg-worker.madrclouddev.workers.dev/");
+  const response = await fetch("https://wgg.madr.io");
   if (!response.ok) {
     throw new Error("Failed to fetch puzzle");
   }
