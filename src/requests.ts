@@ -1,13 +1,11 @@
-// requests.ts
-const getPuzzle = async (): Promise<string> => {
-  const response = await fetch("https://wgg.madr.io");
-
-  if (!response.ok) {
-    throw new Error("Failed to fetch puzzle");
-  }
-
-  const puzzle = await response.json();
-  return puzzle.puzzle;
+// src/requests.ts
+const getPuzzle = async (wordCount = 2): Promise<string> => {
+  const response = await fetch(
+    `https://puzzle.mead.io/puzzle?wordCount=${wordCount}`
+  );
+  if (!response.ok) throw new Error("Failed to fetch puzzle");
+  const data = await response.json();
+  return data.puzzle;
 };
 
 export default getPuzzle;

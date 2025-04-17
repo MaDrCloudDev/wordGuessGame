@@ -1,16 +1,15 @@
 {
-  "name": "wgg-update",
-  "module": "index.ts",
-  "type": "module",
+  "name": "puzzle-app",
   "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "make": "bun build src/index.ts --outdir ./public --target browser",
-    "start": "bun --hot run ./public/index.html"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5"
+    "typescript": "~5.7.2",
+    "vite": "^6.3.1"
   }
 }

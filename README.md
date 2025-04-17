@@ -1,7 +1,7 @@
 # wordGuessGame | MaDrCloudDev
 
 ```bash
-bun install
-bun make
-bun start
+npm i
+npm run build
+bun run dev
 ```
