@@ -58,13 +58,13 @@ class Hangman {
 }
 
 // src/requests.ts
-var getPuzzle = async (wordCount) => {
+var getPuzzle = async () => {
   const response = await fetch("https://cloudflare-wgg-worker.madrclouddev.workers.dev/");
   if (!response.ok) {
     throw new Error("Failed to fetch puzzle");
   }
-  const puzzle = await response.text();
-  return puzzle;
+  const puzzle = await response.json();
+  return puzzle.puzzle;
 };
 var requests_default = getPuzzle;
 
