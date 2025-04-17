@@ -59,13 +59,14 @@ class Hangman {
 
 // src/requests.ts
 var getPuzzle = async (wordCount) => {
-  const response = await fetch(`https://puzzle.mead.io/puzzle?wordCount=${wordCount}`);
+  const response = await fetch("https://cloudflare-wgg-worker.madrclouddev.workers.dev/");
   if (!response.ok) {
     throw new Error("Failed to fetch puzzle");
   }
-  const data = await response.json();
-  return data.puzzle;
+  const puzzle = await response.text();
+  return puzzle;
 };
+var requests_default = getPuzzle;
 
 // src/index.ts
 var puzzleEl = document.querySelector("#puzzle");
@@ -86,7 +87,7 @@ var render = () => {
   });
 };
 var startGame = async () => {
-  const puzzle = await getPuzzle(2);
+  const puzzle = await requests_default(2);
   game1 = new Hangman(puzzle, 6);
   render();
 };
